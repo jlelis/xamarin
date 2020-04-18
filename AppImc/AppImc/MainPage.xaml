@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AppImc.MainPage">
+
+    <StackLayout Padding="30">
+        <Label Text="App IMC"
+               FontSize="Large"
+               HorizontalOptions="Center" />
+        <Label Text="Digite sua altura (mt):" />
+        <Entry x:Name="txtAltura"
+               Placeholder="digite sua altura em mt ex: 1.70"
+               Keyboard="Numeric" />
+        <Label Text="Digite seu peso(Kg):" />
+        <Entry x:Name="txtPeso"
+               Placeholder="digite seu peso em kg"
+               Keyboard="Numeric" />
+        <Button x:Name="btnCalcula"
+                Text="Calcular"
+                Clicked="btnCalcula_Clicked" />
+
+        <Label x:Name="resultAltura" Text="" 
+               HorizontalOptions="Center"/>
+        <Label x:Name="resultPeso" Text="" 
+               HorizontalOptions="Center"/>
+        <Label x:Name="resultIMC" Text=""
+               HorizontalOptions="Center"/>
+        <Label x:Name="resultCalculo" 
+               Text=""
+               FontAttributes="Bold"
+               HorizontalOptions="Center"/>
+    </StackLayout>
+
+</ContentPage>
